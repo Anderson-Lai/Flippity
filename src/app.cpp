@@ -8,7 +8,7 @@ bool App::OnInit()
 {
     PricingLibrary::Initialize();
     MainFrame* frame = new MainFrame("Flippity");
-    frame->SetClientSize(1200, 800);
+    frame->SetClientSize(800, 600);
     frame->Center();
     frame->Show();
     return true;

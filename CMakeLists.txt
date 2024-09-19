@@ -20,6 +20,8 @@ include(${wxWidgets_USE_FILE})
 add_executable(${PROJECT_NAME} WIN32
     "${CMAKE_CURRENT_SOURCE_DIR}/src/app.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/src/mainframe.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/getflips.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/clipboard.cpp"
 )
 
 target_include_directories(${PROJECT_NAME}
