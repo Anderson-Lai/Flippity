@@ -2,7 +2,7 @@
 
 ## Build Process
 
-Documentation on the build process can be found [here](/docs/build.md)  
+Documentation on the build process can be found [here.](/docs/build.md)  
 
 ## Licenses
 
