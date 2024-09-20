@@ -28,7 +28,7 @@ void MainFrame::GetFlips()
             // safely update GUI from background thread
             wxEvtHandler::CallAfter([this, buffer]()
                     {
-                        this->m_textCtrl->SetValue(buffer); 
+                        this->m_textCtrl->SetValue(buffer);
                     });
         
             Timing::Sleep(1'500);

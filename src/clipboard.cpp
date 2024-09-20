@@ -1,5 +1,5 @@
 #include "clipboard.h"
-#include "wx/clipbrd.h"
+#include <wx/clipbrd.h>
 
 int Clipboard::Write(const char* text)
 {
