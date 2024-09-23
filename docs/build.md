@@ -42,6 +42,6 @@ sudo apt install gcc
 mkdir build
 cd build 
 
-cmake -- . --DCMAKE_BUILD_TYPE=Release
+cmake .. --DCMAKE_BUILD_TYPE=Release
 cmake --build . --config Release
 ```
