@@ -15,8 +15,11 @@ public:
 private:
     void HandleExit(wxCommandEvent& evt);
     void GetFlips();
+    void FlipsIn();
 private:
     std::unordered_map<Panels, wxPanel*> m_panels;
 private:
     wxTextCtrl* m_textCtrl;
+    wxTextCtrl* m_timeElapsed;
+    wxTextCtrl* m_flipsIn;
 };

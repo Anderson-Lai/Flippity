@@ -23,6 +23,8 @@ add_executable(${PROJECT_NAME} WIN32
     "${CMAKE_CURRENT_SOURCE_DIR}/src/getflips.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/src/clipboard.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/src/events.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/draw.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/secondinminute.cpp"
 )
 
 target_include_directories(${PROJECT_NAME}
