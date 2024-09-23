@@ -5,7 +5,7 @@
 - libcurl
 - CMake 3.20 or higher
 - A C++ compiler supporting C++20
-all other dependencies will be feteched via CMake during build time  
+- all other dependencies will be feteched via CMake during build time  
 
 ### Installation on Debian-based Linux distros
 
@@ -34,4 +34,14 @@ sudo apt install libcurl4-openssl-dev
 ``` sh
 sudo apt install cmake
 sudo apt install gcc
+```
+
+### Building the Project 
+
+``` sh
+mkdir build
+cd build 
+
+cmake -- . --DCMAKE_BUILD_TYPE=Release -DNDEBUG
+cmake --build . --config Release
 ```
