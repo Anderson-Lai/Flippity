@@ -1,5 +1,4 @@
 #include "mainframe.h"
-#include <wx/wx.h>
 
 void MainFrame::DrawMainPanel()
 {
@@ -13,7 +12,7 @@ void MainFrame::DrawMainPanel()
     this->m_timeElapsed = new wxTextCtrl(panel, wxID_ANY, "Time Elapsed:\n", wxDefaultPosition, wxSize(125, 75),
             wxTE_READONLY | wxTE_MULTILINE | wxTE_CENTER);
     this->m_textCtrl = new wxTextCtrl(panel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize(450, 350),
-           wxTE_READONLY | wxTE_MULTILINE);
+           wxTE_READONLY | wxTE_MULTILINE | wxTE_CENTER);
     
     utilsSizer->Add(this->m_flipsIn, wxSizerFlags().Border(wxALL, 25));
     utilsSizer->Add(this->m_timeElapsed, wxSizerFlags().Border(wxALL, 25));
