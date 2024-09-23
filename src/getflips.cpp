@@ -24,10 +24,11 @@ void MainFrame::GetFlips()
             }
             
             std::string buffer;
-            for (const auto& flip : flips)
+            for (long long i = flips.size() - 1; i > -1; i--)
             {
-                buffer += flip->GetUuid() + " " + Conversions::ToNarrowString(flip->GetName()) + " "
-                    + std::to_string(flip->GetPrice())  + " " + std::to_string(flip->GetProfit()) + "\n\n";
+                buffer += std::format("Auction uuid: {}\nProfit: {}\nItem name: {}\nItem price: {}\n\n",
+                        flips[i]->GetUuid(), flips[i]->GetProfit(),
+                        Conversions::ToNarrowString(flips[i]->GetName()), flips[i]->GetPrice());
             }
 
             // safely update GUI from background thread

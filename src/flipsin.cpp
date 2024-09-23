@@ -6,7 +6,7 @@ void MainFrame::FlipsIn()
     while (true)
     {
         const unsigned long long now = Timing::CurrentSecondInMinute();
-        const std::string text = !now ? "NOW!" : std::to_string(60 - now);
+        const std::string text = now < 3 ? "NOW!" : std::to_string(60 - now) + "s";
 
         wxEvtHandler::CallAfter([this, text]()
                 {
