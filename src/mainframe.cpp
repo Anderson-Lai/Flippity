@@ -21,7 +21,7 @@ void MainFrame::DrawMainPanel()
     
     wxBoxSizer* sizer = new wxBoxSizer(wxVERTICAL);
     this->m_textCtrl = new wxTextCtrl(panel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize(450, 350),
-           wxTE_READONLY);
+           wxTE_READONLY | wxTE_MULTILINE);
 
     sizer->Add(this->m_textCtrl, wxSizerFlags(0).CenterHorizontal().Border(wxALL, 25));
 
