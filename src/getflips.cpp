@@ -27,7 +27,7 @@ void MainFrame::GetFlips()
             for (const auto& flip : flips)
             {
                 buffer += flip->GetUuid() + " " + Conversions::ToNarrowString(flip->GetName()) + " "
-                    + std::to_string(flip->GetPrice())  + " " + std::to_string(flip->GetProfit()) + "\n";
+                    + std::to_string(flip->GetPrice())  + " " + std::to_string(flip->GetProfit()) + "\n\n";
             }
 
             // safely update GUI from background thread
