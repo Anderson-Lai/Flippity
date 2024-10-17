@@ -7,7 +7,7 @@
 - A C++ compiler supporting C++20
 - all other dependencies will be feteched via CMake during build time  
 
-### Installation on Debian-based Linux distros
+### Installing dependencies on Debian-based Linux distros
 
 #### Installing wxWidgets
 
