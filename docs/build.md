@@ -1,9 +1,9 @@
 ## Building from source
 
 **Prerequisites**:
-- wxWidgets
-- libcurl
-- CMake 3.20 or higher
+- [wxWidgets](https://www.wxwidgets.org/downloads/)
+- [libcurl](https://curl.se/download.html)
+- [CMake](https://cmake.org/download/) 3.20 or higher
 - A C++ compiler supporting C++20
 - all other dependencies will be feteched via CMake during build time  
 
